@@ -15,9 +15,9 @@ login_json = 'https://passport.lagou.com/login/login.json'
 ```
 
 login_json即为登陆时的链接，但是需要传入参数，尤其是password，一个字符串，能看出来是被加密了<br>
-![传参数](C:/Users/incipient/Desktop/login_json_form_data.png)<br>
+![传参数](https://github.com/incipient1/login_python/blob/master/login_la_gou/img_login_la_gou/login_json_form_data.PNG)<br>
 最后在网页的源码中找到这个密码串如何生成：
-![生成密码串](C:\/Users/\incipient\/Desktop\/gen_password_md5.png)<br>
+![生成密码串](https://github.com/incipient1/login_python/blob/master/login_la_gou/img_login_la_gou/gen_password_md5.PNG)<br>
 在request headers中还有'X-Anit-Forge-Code'、'X-Anit-Forge-Token'需要获取
 
 
@@ -74,6 +74,4 @@ if __name__ == "__main__":
     passwd = '****'
     login(username, passwd)
 ```
-
-    {"content":{"rows":[]},"message":"操作成功","state":1,"submitCode":34517722,"submitToken":"21253d7b-12c2-4314-b772-8f9a610524f3"}
 
