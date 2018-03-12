@@ -8,3 +8,6 @@
 2. 再提交密码
 ## 今日头条
 1. 验证码图片是Data Url，需要用base64解码后再保存
+## 知乎
+1. 已实现输入字符验证码登陆，点击图片中的倒立字符暂无
+2. 参照其它人的方法得到[signature](https://github.com/zkqiang/Zhihu-Login)
